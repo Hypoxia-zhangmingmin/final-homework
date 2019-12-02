@@ -1,0 +1,111 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, abbr, address, cite, code, del, dfn, em,  ins, kbd, q, samp, small,
+strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, figcaption, figure, footer, header, hgroup, menu, nav,
+section, summary, time, mark, audio, video {
+    margin : 0;
+    padding : 0;
+    border : 0;
+    outline : 0;
+    font-size : 100%;
+    vertical-align : baseline;
+    background : transparent;
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.logo {
+    width: 270px;
+    height: 80.703px;
+    position: absolute;
+    /* z-index: 2; */
+    padding: 8px 0px 7px 20.547px;
+}
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    width: 270px;
+    height: 80.703px;
+    position: fixed;
+}
+img {
+  max-width: 100%;
+}
+img,video{
+  vertical-align: bottom;
+}
+.img {
+  position: absolute;
+  z-index: 1;
+}
+.headernav {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+}
+.open_nav{
+    background: url(./images/common/open.png)
+    no-repeat center center #273650;
+    background-size: 24px;
+}
+.headernav div {
+    float: left;
+    width: 50px;
+    height: 51px;
+}
+.div {
+  display: block;
+}
+.top-catch {
+  /* max-width: 800px;
+  vertical-align: center;
+  position: absolute;
+  top: 33%;
+  left: 25%;
+  djf */
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+#left-nav.view {
+  transform: translate(0);
+}
+#left-nav {
+  font-family: "PT Sans", sans-serif;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #ffffff;
+  display: table;
+  transition: 0.6s;
+  /* transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+  transition-delay: 0s; */
+}
+.menuLst {
+  display:table-cell;
+  vertical-align: middle;
+}
+nav ul {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+.contact {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #273650;
+  width: 60px;
+  height: 300px;
+}

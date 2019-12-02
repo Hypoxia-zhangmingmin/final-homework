@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ネオ・コーポレーションで地震対策｜感震装置で通電火災を防ぐ</title>
+    <link type="text/css" rel="stylesheet" href="kanshin-snshin.html.css">
+</head>
+<body>
+        <header class>
+        <div class="logo">
+            <h1>
+                <a href="kanshin-snshin.html">
+                    <img src="./images/common/logo.svg">
+                </a>
+            </h1>
+        </div>
+        <div class="headernav">
+            <div class="open_nav"></div>
+        </div>
+        </header>
+        <div class="sidenav" itemscope itemtype="https://www.schema.org/SiteNavigationElement">
+            <div class="close_warp"></div>
+        <nav id="left-nav" class="nav-view">
+            <ul class="menuLst">
+              <li class="nav-top"><span class="under">top</span><span class="up">top</span></li>
+              <li class="nav-about"></a><span class="under">about</span><span class="up">about</span></li>
+              <li class="nav-future"><span class="under">cause</span><span class="up">cause</span></li>                  <li class="nav_products"><a href="#product"><span class="under">products</span><span class="up">products</span></a></li>
+              <li class="contact"><a href="./contact/"></a><span class="under">contact</span><span class="up">contact</span></li>
+            </ul>
+            <ul class="bottom-nav">
+              <li>follow us </li>
+              <li class="fb"><a href="https://www.facebook.com/neocorporation.co.jp/" target="_blank"></a></li>
+              <li class="tw"><a href="https://twitter.com/neocorp_info" target="_blank"></a></li>
+              <li class="gplus"><a href="https://www.youtube.com/channel/UChbAOCtS6tcCkwu5Af9euiA" target="_blank"></a></li>
+              <li class="blog"><a href="https://ameblo.jp/neo-corporation/" target="_blank"></a></li>
+            </ul>
+        </nav> 
+        <!-- <nav>
+            <p>MENU</p>
+            <ul>
+                <li itemprop="name">
+                    "ネオ・コーポレーション"
+                    <br>
+                    感震装置「CRS」トップへ
+                     srcset="./img/top/mv.jpg 1x,./img/top/mv@2x.jpg 2x"
+                     style="width: auto; height: 100%;"
+                </li>
+            </ul>
+        </nav> -->
+        <!-- <ul>
+            <li class="img1"><img src="./images/top/mv.jpg"></li >
+            <li class="img2"><img src="./images/top/mv1.jpg"></li>
+            <li class="img3"><img src="./images/top/mv2.jpg"></li>
+        </ul> -->
+        <img id="thelmg" src="./images/top/mv.jpg">
+        <div class="top-catch">
+                <img src="./images/top/top_catch.png" alt="这里是一些文字">
+            </div>
+        <script>
+        var arr=['./images/top/mv.jpg','./images/top/mv1.jpg','./images/top/mv2.jpg'];
+        var athelmg=document.getElementById("thelmg");
+        var t=1;
+
+        var setlntrval = setInterval(function()
+        {
+          athelmg.src=arr[t];
+          t++;
+          if(t==3)
+          {
+            t=0;
+          }
+        },3000)
+        </script>
+       
+</body>
+</html>
