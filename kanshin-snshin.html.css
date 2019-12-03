@@ -17,10 +17,24 @@ body {
     padding: 0;
     border: 0;
 }
+body {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  -webkit-text-size-adjust: 100%;
+  font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  color: #333;
+}
+.backgoround{
+  background-image: url(./images/top/mv.jpg);
+  background-image: url(./images/top/);
+}
 .logo {
     width: 270px;
     height: 80.703px;
-    position: absolute;
+    position: fixed;
     /* z-index: 2; */
     padding: 8px 0px 7px 20.547px;
 }
@@ -30,7 +44,7 @@ h1 {
     margin: 0px;
     width: 270px;
     height: 80.703px;
-    position: fixed;
+    position: absolute;
 }
 img {
   max-width: 100%;
@@ -62,21 +76,21 @@ img,video{
   display: block;
 }
 .top-catch {
-  /* max-width: 800px;
+  max-width: 800px;
   vertical-align: center;
   position: absolute;
   top: 33%;
   left: 25%;
-  djf */
-  margin: 0 auto;
+  /* margin: 0 auto;
   text-align: center;
-  position: relative;
+  position: relative; */
 }
 #left-nav.view {
   transform: translate(0);
 }
 #left-nav {
   font-family: "PT Sans", sans-serif;
+  width: 60px;
   height: 100%;
   position: fixed;
   top: 0;
@@ -85,10 +99,10 @@ img,video{
   background-color: #ffffff;
   display: table;
   transition: 0.6s;
-  /* transition-property: all;
+  transition-property: all;
   transition-duration: 0.6s;
   transition-timing-function: ease;
-  transition-delay: 0s; */
+  transition-delay: 0s;
 }
 .menuLst {
   display:table-cell;
@@ -108,4 +122,87 @@ li {
   background-color: #273650;
   width: 60px;
   height: 300px;
+}
+body {
+  font-size: 14px;
+  color: #444444;
+  line-height: 1.4;
+
+}
+.transparent {
+  background-color: transparent;
+}
+section {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  position: relative;
+  display: block;
+}
+.about-back-line.show{
+  opacity: 1;
+}
+.about-back-line {
+  width: 50%;
+  height: 100%;
+  float: right;
+  opacity: 0;
+  transition: opacity 4s linear 1000ms;
+}
+.about-back-line .background-table {
+  height: 100%;
+  background-image:linear-gradient(transparent 99%,rgba (255,255,255,0.4)1%),
+  linear-gradient(90deg,transparent 99%,rgba(255,255,255,0.4)1%) ;
+  background-size: 100px 100px;
+  background-repeat: repeat;
+}
+section .content-box {
+  height: 100%;
+  padding:72px;
+  box-sizing: border-box;
+}
+.about {
+  width: 50%;
+  padding-right: 0;
+  background-color: #fff;
+}
+.about .inner {
+  background-color: #eef8f6;
+  padding-left: 11%;
+  position: relative;
+}
+.inner{
+  box-sizing: border-box;
+  height: 100%;
+}
+.about .inner .ttl {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.about .inner .ttl img {
+  max-width: 661px;
+  display: flex;
+}
+.subtitle-1 {
+  transform: translate3d(0,0,0);
+  transform: 500ms ease-out 0ms;
+  opacity: 1;
+}
+.about .subtitle-1 {
+  transform: translate3d(-500px, 0, 0);
+    opacity: 0;
+}
+.about .inner .ttl img {
+  max-width: 661px;
+}
+.subtitle-2 {
+  transform: translate3d(0,0,0);
+  transform: 500ms ease-out 0ms;
+  opacity: 1;
+}
+.about .subtitle-2 {
+  transform: translate3d(-500px, 0, 0);
+    opacity: 0;
 }
