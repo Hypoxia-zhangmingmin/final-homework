@@ -45,6 +45,7 @@ h1 {
     width: 270px;
     height: 80.703px;
     position: absolute;
+    position: fixed;
 }
 img {
   max-width: 100%;
@@ -186,23 +187,23 @@ section .content-box {
   display: flex;
 }
 .subtitle-1 {
-  transform: translate3d(0,0,0);
+  /* transform: translate3d(0,0,0);
   transform: 500ms ease-out 0ms;
-  opacity: 1;
+  opacity: 1; */
 }
 .about .subtitle-1 {
-  transform: translate3d(-500px, 0, 0);
-    opacity: 0;
+  /* transform: translate3d(-500px, 0, 0);
+    opacity: 0; */
 }
 .about .inner .ttl img {
   max-width: 661px;
 }
 .subtitle-2 {
-  transform: translate3d(0,0,0);
+  /* transform: translate3d(0,0,0);
   transform: 500ms ease-out 0ms;
-  opacity: 1;
+  opacity: 1; */
 }
 .about .subtitle-2 {
-  transform: translate3d(-500px, 0, 0);
-    opacity: 0;
+  /* transform: translate3d(-500px, 0, 0);
+    opacity: 0; */
 }
