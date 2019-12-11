@@ -35,7 +35,7 @@ body {
     width: 270px;
     height: 80.703px;
     position: fixed;
-    /* z-index: 2; */
+    z-index: 2;
     padding: 8px 0px 7px 20.547px;
 }
 h1 {
@@ -54,7 +54,7 @@ img,video{
   vertical-align: bottom;
 }
 .img {
-  position: absolute;
+  position: relative;
   z-index: 1;
 }
 .headernav {
@@ -77,11 +77,14 @@ img,video{
   display: block;
 }
 .top-catch {
-  max-width: 800px;
-  vertical-align: center;
-  position: absolute;
-  top: 33%;
-  left: 25%;
+  max-width: 100%;
+  vertical-align: bottom;
+  text-align: center;
+  position: relative;
+  top: 210px;
+  z-index: 2;
+  /* top: 33%;
+  left: 25%; */
   /* margin: 0 auto;
   text-align: center;
   position: relative; */
@@ -100,12 +103,8 @@ img,video{
   background-color: #ffffff;
   display: table;
   transition: 0.6s;
-  transition-property: all;
-  transition-duration: 0.6s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
 }
-.menuLst {
+#left-nav .menuLst {
   display:table-cell;
   vertical-align: middle;
 }
@@ -128,14 +127,12 @@ body {
   font-size: 14px;
   color: #444444;
   line-height: 1.4;
-
 }
 .transparent {
   background-color: transparent;
 }
 section {
   box-sizing: border-box;
-  background-color: #ffffff;
   position: relative;
   display: block;
 }
@@ -148,13 +145,20 @@ section {
   float: right;
   opacity: 0;
   transition: opacity 4s linear 1000ms;
+  position: relative;
+  top: 650px;
 }
 .about-back-line .background-table {
-  height: 100%;
+  /* height: 100%;
   background-image:linear-gradient(transparent 99%,rgba (255,255,255,0.4)1%),
   linear-gradient(90deg,transparent 99%,rgba(255,255,255,0.4)1%) ;
   background-size: 100px 100px;
+  background-repeat: repeat; */
+  height: 100%;
+  background-image: linear-gradient(transparent 99%, rgba(255, 255, 255, 0.4) 1%), linear-gradient(90deg, transparent 99%, rgba(255, 255, 255, 0.4) 1%);
+  background-size: 100px 100px;
   background-repeat: repeat;
+
 }
 section .content-box {
   height: 100%;
@@ -166,44 +170,740 @@ section .content-box {
   padding-right: 0;
   background-color: #fff;
 }
-.about .inner {
+.content-box {
+  height: 100%; 
+  padding: 72px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 650px; 
+  width: 720px;
+}
+.inner {
   background-color: #eef8f6;
   padding-left: 11%;
   position: relative;
-}
-.inner{
   box-sizing: border-box;
   height: 100%;
+  width: 600px;
 }
-.about .inner .ttl {
+div{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+div {
+  display: block;
+}
+.about-content {
   position: absolute;
   width: 100%;
   top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
 }
-.about .inner .ttl img {
-  max-width: 661px;
-  display: flex;
+.about .inner .about-content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
 }
-.subtitle-1 {
-  /* transform: translate3d(0,0,0);
-  transform: 500ms ease-out 0ms;
-  opacity: 1; */
-}
-.about .subtitle-1 {
-  /* transform: translate3d(-500px, 0, 0);
-    opacity: 0; */
-}
-.about .inner .ttl img {
+.about .inner .about-content img {
   max-width: 661px;
 }
-.subtitle-2 {
-  /* transform: translate3d(0,0,0);
+.subtitle_1 {
+  transform: translate3d(0,0,0);
   transform: 500ms ease-out 0ms;
-  opacity: 1; */
+  opacity: 1;
 }
-.about .subtitle-2 {
-  /* transform: translate3d(-500px, 0, 0);
-    opacity: 0; */
+/* .about .subtitle_1 {
+  transform: translate3d(-500px, 0, 0);
+    opacity: 0;
+} */
+img {
+  max-width: 100%;
+}
+img,video {
+  vertical-align: bottom;
+}
+.about .inner .about-content img {
+  max-width: 661px;
+}
+.subtitle_2 {
+  transform: translate3d(0,0,0);
+  transform: 500ms ease-out 0ms;
+  opacity: 1;
+}
+/* .about .subtitle_2 {
+  transform: translate3d(-500px, 0, 0);
+    opacity: 0;
+} */
+h2 {
+  margin: 35px 0 25px 0;
+  font-size: 1.6rem;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  font-weight: normal;
+  color: #273650;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.subtitle_3{
+  margin: 35px 0 25px 0;
+  font-size: 1.6rem;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  font-weight: normal;
+  color: #273650;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.about .inner .about-content p {
+  margin: 0 0 60px 0;
+  padding-right: 100px;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  /* vertical-align: baseline; */
+  background: transparent;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+p {
+  padding-right: 100px;
+  margin: 0 0 60px 0;
+  padding-right: 100px;
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 60px;
+}
+.subtitle_4 {
+  transform: translate3d(0,0,0);
+  transition: 500ms ease-out 1000ms;
+  opacity: 1;
+  height: 30px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.btn {
+  color: #fff;
+  line-height: 2.2;
+  width: 250px;
+  padding: 1em 0;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s !important;
+  overflow: hidden;
+  border: 1px solid transparent;
+  text-align: center;
+  background-color: #0086cb;
+  margin-top: 60px;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+#thelmg {
+  position: fixed;;
+}
+section {
+  /* background: url(./images/top/furure_back.jpg)no-repeat center center;
+  background-size: cover;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+  top: 1710px;
+  display: block; */
+  box-sizing: border-box;
+  /* background-color: #fff; */
+  position: relative;
+  display: block;
+}
+section .content-box {
+  height: 100%;
+  padding: 72px;
+  box-sizing: border-box;
+}
+.future {
+  background: url(./images/top/furure_back.jpg)no-repeat center center;
+  background-size: cover;
+  position: relative;
+  top: 680px;
+  padding: 72px;
+}
+.future .inner {
+  padding: 3%;
+  background-color: #0d2439;
+  height: auto;
+  max-width: 1400px;
+  width: 1400px;
+  margin: 0 auto;
+}
+.inner {
+  box-sizing: border-box;
+  height: 100%;
+}
+.clearfix {
+  display: block;
+  display: inline-table;
+  zoom: 1;
+}
+.clearfix {
+  display: block;
+}
+.clearfix {
+  display: inline-table;
+  zoom: 1;
+}
+.future .inner .inner_inner > div.img {
+  width: 37%;
+  margin-right: 4%;
+}
+.future .inner .inner_inner > div {
+  box-sizing: border-box;
+  float: left;
+}
+img {
+  max-width: 100%;
+  
+}
+.future.show .subtitle_5 {
+  transform: scale(1);
+  opacity: 1;
+  transition: 500ms ease-out;
+}
+.future .subtitle_5 {
+  transform: scale(0.3);
+  opacity: 0;
+}
+img,video {
+  vertical-align: bottom;
+}
+.future .inner .inner_inner > div.txt {
+  width: 59%;
+  padding: 2%;
+  color: #fff;
+}
+.future .inner .inner_inner > div:nth-child(2){
+  margin-right: 0;
+}
+.future .inner .inner_inner > div {
+  box-sizing: border-box;
+  float: left;
+}
+h3 {
+  font-size: 230%;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  margin-bottom: 30px;
+}
+.future.show .subtitle_6 {
+  transform: scale(1);
+  opacity: 1;
+  transition: 500ms ease-out;
+}
+.future .subtitle_6 {
+  transform: scale(0.3);
+  opacity: 0;
+}
+p {
+  line-height: 1.9;
+  margin-bottom: 30px;
+  padding-right: 10px;
+}
+/* .subtitle_7 {
+  opacity: 1;
+  transition: 1000ms ease-out 300ms;
+} */
+/* .future .subtitle_7 {
+  opacity: 0;
+} */
+.future .inner .inner_inner > div.txt dl {
+  margin-bottom: 25px;
+}
+.future .inner .inner_inner > div.txt dl dt {
+  margin-bottom: 10px;
+}
+.future .inner .inner_inner > div.txt dl dd {
+  width: 100%;
+  background-color: #fff;
+  color: #444;
+  padding: 0.4em 0;
+  position: relative;
+}
+.future.show .inner .inner_inner > div.txt dl dd.graph1:before {
+  background-color: #e60012;
+  width: 61%;
+}
+.future.show .inner .inner_inner > div.txt dl dd.graph2:before {
+  width: 20.8%;
+}
+.future.show .inner .inner_inner > div.txt dl dd.graph3:before {
+  width: 8.6%;
+}
+.future.show .inner .inner_inner > div.txt dl dd.graph4:before {
+  width: 9.3%;
+}
+.future .inner .inner_inner > div.txt dl dd:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  background-color: #929292;
+  top: 0;
+  transition: 1s;
+  transition-delay: 1s;
+}
+span {
+  position: relative;
+  z-index: 1;
+  text-align: right;
+  margin-left: 0;
+  /* opacity: 0; */
+  transition: margin-left 1s linear 1s, opacity 1s linear 1.8s;
+}
+.future.show .inner .inner_inner > div.txt dl dd.graph1 span {
+  margin-left: 62%;
+}
+.future.show .inner .inner_inner > div.txt dl dd.graph2 span {
+  margin-left: 21.8%;
+}
+.future.show .inner .inner_inner > div.txt dl dd.graph3 span {
+  margin-left: 9.6%;
+}
+.future.show .inner .inner_inner > div.txt dl dd.graph4 span {
+  margin-left: 10.3%;
+}
+.clearfix:after {
+  content: ".";
+  height: 0px;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+.clearfix:after {
+  content: ".";
+  height: 0px;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+.btn:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  display: inline-block;
+  border: 5px solid transparent;
+  border-left-color: #fff;
+  position: absolute;
+  transition: all 0.6s;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn:after {
+  content: "";
+  width: 120%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  z-index: -1;
+  transform: skew(20deg, 0deg) translate3d(0, 0, 0);
+  left: -130%;
+  top: 0;
+  transition: all 0.6s;
+}
+.future .inner .btn {
+  width: 300px;
+  margin: 1% auto 0;
+}
+.background-4 {
+  width: 100%;
+  height: 100%;
+}
+.img1 {
+  height: 800px;width: 100%;
+}
+section {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+}
+.product {
+  background: url(./images/top/product@2x.jpg) no-repeat bottom center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.product {
+  overflow: hidden;
+}
+.product.show .inner {
+  transform: translate3d(0px, 0px, 0) scale(1);
+  opacity: 1;
+  transition: transform ease 1500ms;
+}
+.product .inner {
+  padding: 3%;
+  background-color: #fff;
+  max-width: 1160px;
+  margin: 0 auto;
+  height: auto;
+}
+.inner {
+  box-sizing: border-box;
+  height: 100%;
+}
+.product .inner .inner_inner > div.txt {
+  width: 65%;
+  padding: 2%;
+  float: left;
+}
+.product .inner .inner_inner > div {
+  box-sizing: border-box;
+}
+.product .inner .inner_inner > div.txt h4 {
+  margin-bottom: 3%;
+}
+h4 {
+  display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h4 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+.product .inner .inner_inner > div.txt h4 img {
+  width: 50%;
+}
+.product .inner .inner_inner > div.txt h4 .sub {
+  color: #fff;
+  background-color: #e70112;
+  padding: 0.7em 1em;
+  display: inline-block;
+  font-weight: normal;
+}
+
+
+span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+.product .inner .inner_inner > div.txt p {
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+.product .inner .inner_inner > div.txt p span {
+  display: block;
+  font-size: 120%;
+  margin-bottom: 3%;
+}
+.product .inner .inner_inner > div.txt dl {
+  width: 100%;
+  padding: 1em 0;
+  border-bottom: 1px solid #eee;
+}
+.product .inner .inner_inner > div.txt dl dt {
+  color: #0086cb;
+  width: 25%;
+  max-width: 150px;
+}
+.product .inner .inner_inner > div.txt dl dt, .product .inner .inner_inner > div.txt dl dd {
+  float: left;
+}
+.product .inner .inner_inner > div.txt dl dd {
+  width: 75%;
+}
+.product .inner .inner_inner > div.txt dl dd {
+  float: left;
+}
+.clearfix:after {
+  content: ".";
+  height: 0px;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+.clearfix:after {
+  content: ".";
+  height: 0px;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+.product .inner .btn {
+  width: 300px;
+  margin: 3% 0 0;
+}
+.btn:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  display: inline-block;
+  border: 5px solid transparent;
+  border-left-color: #fff;
+  position: absolute;
+  transition: all 0.6s;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn:after {
+  content: "";
+  width: 120%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  z-index: -1;
+  transform: skew(20deg, 0deg) translate3d(0, 0, 0);
+  left: -130%;
+  top: 0;
+  transition: all 0.6s;
+}
+.clearfix:after {
+  content: ".";
+  height: 0px;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+.product .inner .quake_report th {
+  padding: 5px 2% 5px 0;
+  vertical-align: middle;
+  background: #f5f5f5;
+}
+.product .inner .inner_inner > div {
+  box-sizing: border-box;
+}
+.product .inner .quake_report_inner h3 {
+  font-size: 180%;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+.product .inner .quake_report_inner table.thead {
+  border: 1px solid #ccc;
+}
+.product .inner .quake_report_inner table {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey;
+}
+.product .inner .quake_report_inner table .w01 {
+  width: 310px;
+}
+.product .inner .quake_report_inner td {
+  padding: 5px 0;
+  border: 1px #ccc solid;
+  vertical-align: middle;
+}
+.product .inner .quake_report_inner .w02,.w03 {
+  margin-left:0px
+}
+.product .inner .quake_report_inner .w01,.w02,.w03 {
+  display: inline-block;
+  margin-bottom: -2px;
+}
+.product .inner .quake_report_inner table .w02 {
+  width: 445px;
+}
+.product .inner .quake_report_inner table .w03 {
+  width: 310px;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.product .inner .inner_inner > div.img {
+  width: 29%;
+  margin-right: 4%;
+  float: right;
+}
+.product .inner .inner_inner > div:nth-child(2) {
+  margin-right: 0;
+}
+.product .inner .inner_inner > div {
+  box-sizing: border-box;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.product .inner .inner_inner > div.img .slick-track {
+  margin-bottom: 3%;
+}
+.slick-slider .slick-track, .slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-slider .slick-track, .slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+li {
+  list-style: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+.product .inner .inner_inner > div.img .slick-dots li.slick-active {
+  border-bottom: 2px solid #0086cb;
+}
+.inner_inner > div.img .slick-dots li {
+  width: 20%;
+  padding: 2%;
+  height: auto;
+  margin: 0 2%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.product .inner .inner_inner > div.img img {
+  max-width: 100%;
+}
+.product .inner .inner_inner > div.img .slick-dots li {
+  width: 20%;
+  padding: 2%;
+  height: auto;
+  margin: 0 2%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.product .inner .inner_inner > div.img .slick-dots {
+  position: relative;
+  bottom: auto;
+}
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.product .inner .inner_inner > div.img {
+  width: 29%;
+  margin-right: 4%;
+  float: right;
+}
+.clearfix:after {
+  content: ".";
+  height: 0px;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+.slick-slide img {
+  display: block;
+}
+.thead {
+  padding: 5px 0;
+  border: 1px #ccc solid;
+  vertical-align: middle;
+  background-color: gainsboro;
 }
